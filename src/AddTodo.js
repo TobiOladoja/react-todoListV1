@@ -17,7 +17,7 @@ class AddTodo extends Component {
     // First prevent default action of form being submitted, which is to refresh
     // the page.
     e.preventDefault();
-    console.log(this.state);
+    this.props.addTodo(this.state);
   };
   render() {
     return (
