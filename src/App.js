@@ -12,7 +12,12 @@ class App extends Component {
   // Because it has to interact with the state above. So function created below
   deleteTodo = id => {
     // function going to take id as param so we can look up and filter
-    console.log(id);
+    const todos = this.state.todos.filter(todo => {
+      return todo.id !== id;
+    });
+    this.setState({
+      todos
+    });
   };
   render() {
     return (
