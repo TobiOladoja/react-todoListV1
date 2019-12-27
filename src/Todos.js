@@ -16,7 +16,8 @@ const Todos = ({ todos, deleteTodo }) => {
       );
     })
   ) : (
-    <p className='center'> You have no todo's left</p>
+    //   If you have no todo's left, this will print:
+    <p className='center'> You have no todo's left, nice one!</p>
   );
   return <div className='todos collection'>{todoList}</div>;
 };
